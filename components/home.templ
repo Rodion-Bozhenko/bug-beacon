@@ -9,8 +9,23 @@ templ Home() {
 			<script src="/assets/js/htmx.min.js"></script>
       <script src="/assets/js/tailwind.min.js"></script>
 		</head>
-		<body class="bg-zinc-900 p-8 text-slate-300">
-		  <p>Home page</p>	
+		<body class="relative flex justify-center bg-zinc-900 text-slate-300">
+      <header class="fixed top-0 left-0 p-4 bg-emerald-600 w-full">
+        <nav class="flex items-center justify-between px-6">
+          <a href="/" class="text-4xl">Bug Beacon</a>
+          <div class="flex gap-1">
+            <button class="p-2 hover:bg-slate-300 hover:text-zinc-900 rounded-md">
+              <a href="/signup" class="text-base font-bold">Sign up</a>
+            </button>
+            <button class="p-2 hover:bg-slate-300 hover:text-zinc-900 rounded-md">
+              <a href="/signin" class="hover:bg-slate-300 hover:text-zinc-900 text-base font-bold">Sign in</a>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main class="mt-40">
+        <h1 class="text-7xl font-bold">Find issue. Fix issue. Bug Beacon.</h1>
+      </main>
 		</body>
 	</html>
 }
